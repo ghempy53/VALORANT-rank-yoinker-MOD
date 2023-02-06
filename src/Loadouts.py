@@ -80,7 +80,7 @@ class Loadouts:
                 if hide_names:
                     for agent in valoApiAgents.json()["data"]:
                         if agent["uuid"] == players[i]["CharacterID"]:
-                            final_json[players[i]["Subject"]].update({"Name": agent["displayName"]})
+                            # final_json[players[i]["Subject"]].update({"Name": agent["displayName"]})
                 else:
                     final_json[players[i]["Subject"]].update({"Name": names[players[i]["Subject"]]})
 
